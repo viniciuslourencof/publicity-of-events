@@ -4,19 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/css/normalize.css" rel="stylesheet" />
+    <link href="../assets/css/reset.css" rel="stylesheet" />       
+
+    
+
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/menu.css">
-    <link rel="stylesheet" href="../assets/css/menu__item.css">
+    <link rel="stylesheet" href="../assets/css/menu/menu__itens.css">
+    <link rel="stylesheet" href="../assets/css/menu/menu__item.css">
+    <link rel="stylesheet" href="../assets/css/menu/menu__itemDivider.css">
+    <link rel="stylesheet" href="../assets/css/menu/menu__titulo.css">    
+    <link rel="stylesheet" href="../assets/css/eventos/eventos.css">
+    <link rel="stylesheet" href="../assets/css/eventos/evento.css">
+    <link rel="stylesheet" href="../assets/css/eventos/evento__imagem.css">
+    <link rel="stylesheet" href="../assets/css/eventos/evento__conteudo.css">
+    <link rel="stylesheet" href="../assets/css/eventos/evento__titulo.css">    
+    <link rel="stylesheet" href="../assets/css/eventos/evento__subtitulo.css"> 
+    <link rel="stylesheet" href="../assets/css/eventos/evento__local.css">     
+    <link rel="stylesheet" href="../assets/css/eventos/evento__pessoas.css">        
+    <link rel="stylesheet" href="../assets/css/conteudo.css">  
+        
+    
     <title>Eventos</title>
 </head>
 <body>
-    <div>
+    <div class="conteudo" >
         <header>            
             <nav>
-                <h1>Descobrir Eventos</h1>
-                <ul class="menu">
-                    <li class="menu__item">Minha Localização</li>
-                    <li class="menu__item">Qualquer Data</li>
+                <h1 class="menu__titulo">Descobrir Eventos</h1>
+                <ul class="menu__itens">
+                    <li>                                 
+                        <select class="menu__item menu__item--combobox" name="" id="">                                                                                  
+                            <option value="">                                                                
+                                Minha localização
+                            </option>
+                            <option value="">
+                                Online
+                            <option>
+                        </select>
+                    </li>
+                    <li>
+                        <select class="menu__item menu__item--combobox" name="" id="">
+                            <option value="">                                                                
+                                Qualquer data
+                            </option>                            
+                        </select>                        
+                    </li>
+                    <div class="menu__itemDivider"></div>
                     <li class="menu__item">Principais</li>
                     <li class="menu__item">Aulas</li>
                     <li class="menu__item">Amigos</li>
@@ -24,8 +58,37 @@
                 </ul>
             </nav>
         </header>
+        <main>
+
+            <div class="eventos">
+                <div class="evento">
+                    <img class="evento__imagem" src="../assets/img/evento-1.jfif"/>
+                    <div class="evento__conteudo">
+                        <h3 class="evento__subtitulo">SÁB. 17 DE SET ÁS 9:00</h3>
+                        <h2 class="evento__titulo">Evento 1</h2>
+                        <p class="evento__local">Online</p>
+                        <p class="evento__pessoas">30 interessados · 2 comparecerão</p>
+                        <button>Tenho Interesse</button>
+                        <button>Compatilhar</button>
+                    </div>
+                </div>
+
+                <div class="evento">
+                    <img class="evento__imagem" src="../assets/img/evento-2.jfif"/>
+                    <div class="evento__conteudo">
+                        <h3 class="evento__subtitulo">SÁB. 17 DE SET ÁS 9:00</h3>
+                        <h2 class="evento__titulo">Evento 1</h2>
+                        <p class="evento__local">Online</p>
+                        <p class="evento__pessoas">30 interessados · 2 comparecerão</p>
+                        <button>Tenho Interesse</button>
+                        <button>Compatilhar</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
     </div>
-    <main></main>
     <footer></footer>
 </body>
 </html>
