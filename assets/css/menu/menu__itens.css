@@ -1,5 +1,7 @@
-.menu {
+.menu__itens {
     display: flex;
     list-style: none;
     text-align: center; 
+    padding-left: 0px;
 }
+

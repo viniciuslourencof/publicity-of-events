@@ -1,0 +1,7 @@
+.menu__itemDivider {
+    border-left: 2px solid #3e4042;
+    height: 32px;
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+}

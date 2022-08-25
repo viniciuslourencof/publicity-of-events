@@ -1,0 +1,12 @@
+.evento {
+    /* border: 0.1px ridge #18191a; */
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 1.75rem;
+    width: 30%;
+}
+
+.evento:hover {
+    background-color: #65676B;
+}
+

@@ -1,0 +1,26 @@
+.menu__item {
+    align-items: center;
+    background-color: #3a3b3c;
+    border: none;
+    border-radius: 15px;
+    color: #E4E6EB;
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    margin: 0.2rem;
+    outline: none;
+    padding: 8px;
+}
+
+/* .menu__item:active {     */
+    /* transform:  */
+  /* } */
+
+.menu__item--combobox {
+    border-radius: 7px;
+}
+
+.menu__item:hover {
+    background-color: #65676B;
+}
