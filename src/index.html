@@ -22,32 +22,42 @@
     <link rel="stylesheet" href="../assets/css/eventos/evento__subtitulo.css"> 
     <link rel="stylesheet" href="../assets/css/eventos/evento__local.css">     
     <link rel="stylesheet" href="../assets/css/eventos/evento__pessoas.css">        
+    <link rel="stylesheet" href="../assets/css/eventos/evento__botao.css">
+    <link rel="stylesheet" href="../assets/css/eventos/evento__botoes.css">
+    <link rel="stylesheet" href="../assets/css/conteudo.css">      
     <link rel="stylesheet" href="../assets/css/conteudo.css">  
-        
-    
+    <link rel="stylesheet" href="../assets/css/menuLateral.css">      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">     
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
     <title>Eventos</title>
 </head>
 <body>
-    <div class="conteudo" >
+    
+    <div class="conteudo">
         <header>            
             <nav>
                 <h1 class="menu__titulo">Descobrir Eventos</h1>
                 <ul class="menu__itens">
                     <li>                                 
                         <select class="menu__item menu__item--combobox" name="" id="">                                                                                  
-                            <option value="">                                                                
-                                Minha localização
+                            <option value="">                                    
+                                &#xf3c5; Minha localização
                             </option>
                             <option value="">
-                                Online
-                            <option>
+                                &#xf0ac; Online
+                            </option>
                         </select>
                     </li>
                     <li>
                         <select class="menu__item menu__item--combobox" name="" id="">
                             <option value="">                                                                
-                                Qualquer data
-                            </option>                            
+                                &#xf073; Qualquer data
+                            </option>      
+                            <option value="">
+                                &#xf783; Este fim de semana
+                            </option>
                         </select>                        
                     </li>
                     <div class="menu__itemDivider"></div>
@@ -61,29 +71,83 @@
         <main>
 
             <div class="eventos">
-                <div class="evento">
+            
+                <div class="evento hover" id="evento-0">
                     <img class="evento__imagem" src="../assets/img/evento-1.jfif"/>
                     <div class="evento__conteudo">
                         <h3 class="evento__subtitulo">SÁB. 17 DE SET ÁS 9:00</h3>
                         <h2 class="evento__titulo">Evento 1</h2>
                         <p class="evento__local">Online</p>
                         <p class="evento__pessoas">30 interessados · 2 comparecerão</p>
-                        <button>Tenho Interesse</button>
-                        <button>Compatilhar</button>
+                        <div class="evento__botoes">
+                            <button class="evento__botao" onmouseenter="removeHover('evento-0')" onmouseleave="addHover('evento-0')">
+                                <i class="fa-regular fa-star"></i>
+                                Tenho Interesse
+                            </button>
+                            <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-0')" onmouseleave="addHover('evento-0')">
+                                &#xf064;
+                            </button>            
+                        </div>    
                     </div>
                 </div>
 
-                <div class="evento">
+                <div class="evento hover" id="evento-1">
                     <img class="evento__imagem" src="../assets/img/evento-2.jfif"/>
                     <div class="evento__conteudo">
                         <h3 class="evento__subtitulo">SÁB. 17 DE SET ÁS 9:00</h3>
                         <h2 class="evento__titulo">Evento 1</h2>
                         <p class="evento__local">Online</p>
-                        <p class="evento__pessoas">30 interessados · 2 comparecerão</p>
-                        <button>Tenho Interesse</button>
-                        <button>Compatilhar</button>
+                        <p class="evento__pessoas">30 interessados · 2 comparecerão</p>                        
+                        <div class="evento__botoes">
+                            <button class="evento__botao" onmouseenter="removeHover('evento-1')" onmouseleave="addHover('evento-1')">
+                                <i class="fa-regular fa-star"></i>
+                                Tenho Interesse
+                            </button>
+                            <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-1')" onmouseleave="addHover('evento-1')">
+                                &#xf064;
+                            </button>         
+                        </div>
                     </div>
                 </div>
+
+                <div class="evento hover" id="evento-2">
+                    <img class="evento__imagem" src="../assets/img/evento-2.jfif"/>
+                    <div class="evento__conteudo">
+                        <h3 class="evento__subtitulo">SÁB. 17 DE SET ÁS 9:00</h3>
+                        <h2 class="evento__titulo">Evento 1</h2>
+                        <p class="evento__local">Online</p>
+                        <p class="evento__pessoas">30 interessados · 2 comparecerão</p>                        
+                        <div class="evento__botoes">
+                            <button class="evento__botao" onmouseenter="removeHover('evento-2')" onmouseleave="addHover('evento-2')">
+                                <i class="fa-regular fa-star"></i>
+                                Tenho Interesse
+                            </button>
+                            <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-2')" onmouseleave="addHover('evento-2')">
+                                &#xf064;
+                            </button>                
+                        </div>    
+                    </div>
+                </div>
+                
+                <div class="evento hover" id="evento-3">
+                    <img class="evento__imagem" src="../assets/img/evento-2.jfif"/>
+                    <div class="evento__conteudo">
+                        <h3 class="evento__subtitulo">SÁB. 17 DE SET ÁS 9:00</h3>
+                        <h2 class="evento__titulo">Evento 1</h2>
+                        <p class="evento__local">Online</p>
+                        <p class="evento__pessoas">30 interessados · 2 comparecerão</p>                        
+                        <div class="evento__botoes">
+                            <button class="evento__botao" onmouseenter="removeHover('evento-3')" onmouseleave="addHover('evento-3')">
+                                <i class="fa-regular fa-star"></i>
+                                Tenho Interesse
+                            </button>
+                            <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-3')" onmouseleave="addHover('evento-3')">
+                                &#xf064;
+                            </button>                
+                        </div>    
+                    </div>
+                </div>    
+ 
 
             </div>
 
@@ -91,4 +155,16 @@
     </div>
     <footer></footer>
 </body>
+<script>
+    function removeHover(id) {
+        var element = document.getElementById(id);
+        element.classList.remove("hover");
+    }
+
+    function addHover(id) {
+        var element = document.getElementById(id);
+        element.classList.add("hover");
+    }
+
+</script>
 </html>
