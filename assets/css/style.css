@@ -3,3 +3,23 @@ body {
     color: #E4E6EB;
     background: #18191a;
 }
+
+
+select {
+    font-family: 'Segoe UI', 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+select option {
+    font-family: 'Segoe UI', 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+button {
+    font-family: 'Segoe UI', 'Font Awesome 5 Free';
+    font-weight: 900;    
+}
+
+.hover:hover {
+    background-color: #65676B;
+}

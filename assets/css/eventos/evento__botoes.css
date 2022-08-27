@@ -1,5 +1,4 @@
-.eventos {
+.evento__botoes {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }

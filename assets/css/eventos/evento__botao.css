@@ -1,0 +1,22 @@
+.evento__botao {
+    background: #4E4F50;
+    border: none;
+    border-radius: 5px;    
+    color: #E7E9ED;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    height: 36px;
+    margin-top: 1rem;
+    outline: none;
+    transition: background-color 0.2s ease;    
+    width: 70%;            
+}
+
+.evento__botao:hover {
+    background-color: #65676B;    
+}
+
+.evento__botao--menor {
+    width: calc(30% - 1rem);
+}
