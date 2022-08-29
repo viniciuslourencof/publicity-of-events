@@ -1,0 +1,7 @@
+.menuPrincipal {
+    background-color: #242526;
+    border-bottom: #3e4042 solid 1px;
+    display: flex;
+    margin-top: 0;
+    justify-content: space-around;
+}

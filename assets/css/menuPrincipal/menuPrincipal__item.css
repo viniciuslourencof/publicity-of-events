@@ -1,0 +1,10 @@
+.menuPrincipal__item {
+    text-decoration: none;
+    list-style: none;
+    margin: 1rem;
+}
+
+.menuPrincipal__item a {
+    text-decoration: none;
+    color: #E4E6EB;    
+}

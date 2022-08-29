@@ -1,7 +1,9 @@
 .conteudo {
-    border: 1px solid #3e4042;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
     background-color: #242526;
+    border: 1px solid #3e4042;
+    border-radius: 10px;
+    margin: 1rem;
+    float: right;
+    padding: 1rem;
+    width: 70%;
 }

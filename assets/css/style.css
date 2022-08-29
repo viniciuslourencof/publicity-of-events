@@ -4,20 +4,9 @@ body {
     background: #18191a;
 }
 
-
-select {
+select, select option, button, a {
     font-family: 'Segoe UI', 'Font Awesome 5 Free';
     font-weight: 900;
-}
-
-select option {
-    font-family: 'Segoe UI', 'Font Awesome 5 Free';
-    font-weight: 900;
-}
-
-button {
-    font-family: 'Segoe UI', 'Font Awesome 5 Free';
-    font-weight: 900;    
 }
 
 .hover:hover {

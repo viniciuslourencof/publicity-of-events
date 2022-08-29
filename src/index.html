@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../assets/css/normalize.css" rel="stylesheet" />
-    <link href="../assets/css/reset.css" rel="stylesheet" />       
-
-    
+    <link href="../assets/css/reset.css" rel="stylesheet" />           
 
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/menu/menu__itens.css">
@@ -24,9 +22,13 @@
     <link rel="stylesheet" href="../assets/css/eventos/evento__pessoas.css">        
     <link rel="stylesheet" href="../assets/css/eventos/evento__botao.css">
     <link rel="stylesheet" href="../assets/css/eventos/evento__botoes.css">
-    <link rel="stylesheet" href="../assets/css/conteudo.css">      
-    <link rel="stylesheet" href="../assets/css/conteudo.css">  
-    <link rel="stylesheet" href="../assets/css/menuLateral.css">      
+    <link rel="stylesheet" href="../assets/css/conteudo.css">    
+    <link rel="stylesheet" href="../assets/css/menuPrincipal/menuPrincipal.css">    
+    <link rel="stylesheet" href="../assets/css/menuPrincipal/menuPrincipal__item.css">    
+    <link rel="stylesheet" href="../assets/css/lateral/lateral.css">    
+    <link rel="stylesheet" href="../assets/css/lateral/lateral__botao.css">    
+    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
@@ -34,44 +36,60 @@
     <title>Eventos</title>
 </head>
 <body>
+
+    <header>           
+        <nav>
+            <ul class="menuPrincipal">
+                <li class="menuPrincipal__item">
+                    <a href="index.html">Explorar</a>                    
+                </li>
+                <li class="menuPrincipal__item">
+                    <a href="#">Meus Eventos</a>      
+                </li>
+                <li class="menuPrincipal__item">
+                    <a href="#">Em Alta</a> 
+                </li>
+                <li class="menuPrincipal__item">
+                    <a href="#">Meu perfil</a> 
+                </li>
+            </ul>
+        </nav>        
+    </header>
+
+    <div class="lateral">
+        <button class="lateral__botao">Criar Evento</button>
+    </div>
     
     <div class="conteudo">
-        <header>            
-            <nav>
-                <h1 class="menu__titulo">Descobrir Eventos</h1>
-                <ul class="menu__itens">
-                    <li>                                 
-                        <select class="menu__item menu__item--combobox" name="" id="">                                                                                  
-                            <option value="">                                    
-                                &#xf3c5; Minha localização
-                            </option>
-                            <option value="">
-                                &#xf0ac; Online
-                            </option>
-                        </select>
-                    </li>
-                    <li>
-                        <select class="menu__item menu__item--combobox" name="" id="">
-                            <option value="">                                                                
-                                &#xf073; Qualquer data
-                            </option>      
-                            <option value="">
-                                &#xf783; Este fim de semana
-                            </option>
-                        </select>                        
-                    </li>
-                    <div class="menu__itemDivider"></div>
-                    <li class="menu__item">Principais</li>
-                    <li class="menu__item">Aulas</li>
-                    <li class="menu__item">Amigos</li>
-                    <li class="menu__item">Seguindo</li>
-                </ul>
-            </nav>
-        </header>
         <main>
+            <h1 class="menu__titulo">Descobrir Eventos</h1>
+            <ul class="menu__itens">
+                <li>                                 
+                    <select class="menu__item menu__item--combobox" name="" id="">                                                                                  
+                        <option value="">                                    
+                            &#xf3c5; Minha localização
+                        </option>
+                        <option value="">
+                            &#xf0ac; Online
+                        </option>
+                    </select>
+                </li>
+                <li>
+                    <select class="menu__item menu__item--combobox" name="" id="">
+                        <option value="">                                                                
+                            &#xf073; Qualquer data
+                        </option>      
+                        <option value="">
+                            &#xf783; Este fim de semana
+                        </option>
+                    </select>                        
+                </li>
+                <div class="menu__itemDivider"></div>
+                <li class="menu__item">Principais</li>
+                <li class="menu__item">Seguindo</li>
+            </ul>            
 
-            <div class="eventos">
-            
+            <div class="eventos">            
                 <div class="evento hover" id="evento-0">
                     <img class="evento__imagem" src="../assets/img/evento.webp"/>
                     <div class="evento__conteudo">
@@ -81,7 +99,7 @@
                         <p class="evento__pessoas">30 interessados · 2 comparecerão</p>
                         <div class="evento__botoes">
                             <button class="evento__botao" onmouseenter="removeHover('evento-0')" onmouseleave="addHover('evento-0')">
-                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-solid fa-fire-flame-curved"></i>
                                 Tenho Interesse
                             </button>
                             <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-0')" onmouseleave="addHover('evento-0')">
@@ -100,7 +118,7 @@
                         <p class="evento__pessoas">30 interessados · 2 comparecerão</p>                        
                         <div class="evento__botoes">
                             <button class="evento__botao" onmouseenter="removeHover('evento-1')" onmouseleave="addHover('evento-1')">
-                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-solid fa-fire-flame-curved"></i>
                                 Tenho Interesse
                             </button>
                             <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-1')" onmouseleave="addHover('evento-1')">
@@ -119,7 +137,7 @@
                         <p class="evento__pessoas">30 interessados · 2 comparecerão</p>                        
                         <div class="evento__botoes">
                             <button class="evento__botao" onmouseenter="removeHover('evento-2')" onmouseleave="addHover('evento-2')">
-                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-solid fa-fire-flame-curved"></i>
                                 Tenho Interesse
                             </button>
                             <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-2')" onmouseleave="addHover('evento-2')">
@@ -138,7 +156,7 @@
                         <p class="evento__pessoas">30 interessados · 2 comparecerão</p>                        
                         <div class="evento__botoes">
                             <button class="evento__botao" onmouseenter="removeHover('evento-3')" onmouseleave="addHover('evento-3')">
-                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-solid fa-fire-flame-curved"></i>
                                 Tenho Interesse
                             </button>
                             <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-3')" onmouseleave="addHover('evento-3')">
