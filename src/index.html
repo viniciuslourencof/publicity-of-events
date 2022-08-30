@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="../assets/css/menuPrincipal/menuPrincipal__item.css">    
     <link rel="stylesheet" href="../assets/css/lateral/lateral.css">    
     <link rel="stylesheet" href="../assets/css/lateral/lateral__botao.css">    
+    <link rel="stylesheet" href="../assets/css/lateral/lateral__divider.css">  
+    <link rel="stylesheet" href="../assets/css/main.css">    
     
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">     
@@ -44,10 +46,7 @@
                     <a href="index.html">Explorar</a>                    
                 </li>
                 <li class="menuPrincipal__item">
-                    <a href="#">Meus Eventos</a>      
-                </li>
-                <li class="menuPrincipal__item">
-                    <a href="#">Em Alta</a> 
+                    <a href="#">Meus eventos</a>      
                 </li>
                 <li class="menuPrincipal__item">
                     <a href="#">Meu perfil</a> 
@@ -56,121 +55,127 @@
         </nav>        
     </header>
 
-    <div class="lateral">
-        <button class="lateral__botao">Criar Evento</button>
-    </div>
+    <div class="main">
+        <div class="lateral">
+            <h2>Eventos</h2>
+            <button class="lateral__botao">Criar evento</button>
+            <div class="lateral__divider"></div>
+            <h3>Categorias</h3>
+        </div>
+        
+        <div class="conteudo">
+            <main>
+                <h1 class="menu__titulo">Descobrir eventos</h1>
+                <ul class="menu__itens">
+                    <li>                                 
+                        <select class="menu__item menu__item--combobox" name="" id="">                                                                                  
+                            <option value="">                                    
+                                &#xf3c5; Minha localização
+                            </option>
+                            <option value="">
+                                &#xf0ac; Online
+                            </option>
+                        </select>
+                    </li>
+                    <li>
+                        <select class="menu__item menu__item--combobox" name="" id="">
+                            <option value="">                                                                
+                                &#xf073; Qualquer data
+                            </option>      
+                            <option value="">
+                                &#xf783; Este fim de semana
+                            </option>
+                        </select>                        
+                    </li>
+                    <div class="menu__itemDivider"></div>
+                    <li class="menu__item">Principais</li>
+                    <li class="menu__item">Meus interesses</li>
+                </ul>            
     
-    <div class="conteudo">
-        <main>
-            <h1 class="menu__titulo">Descobrir Eventos</h1>
-            <ul class="menu__itens">
-                <li>                                 
-                    <select class="menu__item menu__item--combobox" name="" id="">                                                                                  
-                        <option value="">                                    
-                            &#xf3c5; Minha localização
-                        </option>
-                        <option value="">
-                            &#xf0ac; Online
-                        </option>
-                    </select>
-                </li>
-                <li>
-                    <select class="menu__item menu__item--combobox" name="" id="">
-                        <option value="">                                                                
-                            &#xf073; Qualquer data
-                        </option>      
-                        <option value="">
-                            &#xf783; Este fim de semana
-                        </option>
-                    </select>                        
-                </li>
-                <div class="menu__itemDivider"></div>
-                <li class="menu__item">Principais</li>
-                <li class="menu__item">Seguindo</li>
-            </ul>            
-
-            <div class="eventos">            
-                <div class="evento hover" id="evento-0">
-                    <img class="evento__imagem" src="../assets/img/evento.webp"/>
-                    <div class="evento__conteudo">
-                        <h3 class="evento__subtitulo">SÁB. 17 DE SET ÁS 9:00</h3>
-                        <h2 class="evento__titulo">Evento 1</h2>
-                        <p class="evento__local">Online</p>
-                        <p class="evento__pessoas">30 interessados · 2 comparecerão</p>
-                        <div class="evento__botoes">
-                            <button class="evento__botao" onmouseenter="removeHover('evento-0')" onmouseleave="addHover('evento-0')">
-                                <i class="fa-solid fa-fire-flame-curved"></i>
-                                Tenho Interesse
-                            </button>
-                            <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-0')" onmouseleave="addHover('evento-0')">
-                                &#xf064;
-                            </button>            
-                        </div>    
-                    </div>
-                </div>
-
-                <div class="evento hover" id="evento-1">
-                    <img class="evento__imagem" src="../assets/img/evento.webp"/>
-                    <div class="evento__conteudo">
-                        <h3 class="evento__subtitulo">SÁB. 17 DE SET ÁS 9:00</h3>
-                        <h2 class="evento__titulo">Evento 2</h2>
-                        <p class="evento__local">Online</p>
-                        <p class="evento__pessoas">30 interessados · 2 comparecerão</p>                        
-                        <div class="evento__botoes">
-                            <button class="evento__botao" onmouseenter="removeHover('evento-1')" onmouseleave="addHover('evento-1')">
-                                <i class="fa-solid fa-fire-flame-curved"></i>
-                                Tenho Interesse
-                            </button>
-                            <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-1')" onmouseleave="addHover('evento-1')">
-                                &#xf064;
-                            </button>         
+                <div class="eventos">            
+                    <div class="evento hover" id="evento-0">
+                        <img class="evento__imagem" src="../assets/img/evento.webp"/>
+                        <div class="evento__conteudo">
+                            <h3 class="evento__subtitulo">SÁB. 17 DE SET ÁS 9:00</h3>
+                            <h2 class="evento__titulo">Evento 1</h2>
+                            <p class="evento__local">Online</p>
+                            <p class="evento__pessoas">30 interessados · 2 comparecerão</p>
+                            <div class="evento__botoes">
+                                <button class="evento__botao" onmouseenter="removeHover('evento-0')" onmouseleave="addHover('evento-0')">
+                                    <i class="fa-solid fa-fire-flame-curved"></i>
+                                    Tenho Interesse
+                                </button>
+                                <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-0')" onmouseleave="addHover('evento-0')">
+                                    &#xf064;
+                                </button>            
+                            </div>    
                         </div>
                     </div>
-                </div>
-
-                <div class="evento hover" id="evento-2">
-                    <img class="evento__imagem" src="../assets/img/evento.webp"/>
-                    <div class="evento__conteudo">
-                        <h3 class="evento__subtitulo">SÁB. 17 DE SET ÁS 9:00</h3>
-                        <h2 class="evento__titulo">Evento 3</h2>
-                        <p class="evento__local">Online</p>
-                        <p class="evento__pessoas">30 interessados · 2 comparecerão</p>                        
-                        <div class="evento__botoes">
-                            <button class="evento__botao" onmouseenter="removeHover('evento-2')" onmouseleave="addHover('evento-2')">
-                                <i class="fa-solid fa-fire-flame-curved"></i>
-                                Tenho Interesse
-                            </button>
-                            <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-2')" onmouseleave="addHover('evento-2')">
-                                &#xf064;
-                            </button>                
-                        </div>    
+    
+                    <div class="evento hover" id="evento-1">
+                        <img class="evento__imagem" src="../assets/img/evento.webp"/>
+                        <div class="evento__conteudo">
+                            <h3 class="evento__subtitulo">SÁB. 17 DE SET ÁS 9:00</h3>
+                            <h2 class="evento__titulo">Evento 2</h2>
+                            <p class="evento__local">Online</p>
+                            <p class="evento__pessoas">30 interessados · 2 comparecerão</p>                        
+                            <div class="evento__botoes">
+                                <button class="evento__botao" onmouseenter="removeHover('evento-1')" onmouseleave="addHover('evento-1')">
+                                    <i class="fa-solid fa-fire-flame-curved"></i>
+                                    Tenho Interesse
+                                </button>
+                                <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-1')" onmouseleave="addHover('evento-1')">
+                                    &#xf064;
+                                </button>         
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="evento hover" id="evento-3">
-                    <img class="evento__imagem" src="../assets/img/evento.webp"/>
-                    <div class="evento__conteudo">
-                        <h3 class="evento__subtitulo">SÁB. 17 DE SET ÁS 9:00</h3>
-                        <h2 class="evento__titulo">Evento 4</h2>
-                        <p class="evento__local">Online</p>
-                        <p class="evento__pessoas">30 interessados · 2 comparecerão</p>                        
-                        <div class="evento__botoes">
-                            <button class="evento__botao" onmouseenter="removeHover('evento-3')" onmouseleave="addHover('evento-3')">
-                                <i class="fa-solid fa-fire-flame-curved"></i>
-                                Tenho Interesse
-                            </button>
-                            <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-3')" onmouseleave="addHover('evento-3')">
-                                &#xf064;
-                            </button>                
-                        </div>    
+    
+                    <div class="evento hover" id="evento-2">
+                        <img class="evento__imagem" src="../assets/img/evento.webp"/>
+                        <div class="evento__conteudo">
+                            <h3 class="evento__subtitulo">SÁB. 17 DE SET ÁS 9:00</h3>
+                            <h2 class="evento__titulo">Evento 3</h2>
+                            <p class="evento__local">Online</p>
+                            <p class="evento__pessoas">30 interessados · 2 comparecerão</p>                        
+                            <div class="evento__botoes">
+                                <button class="evento__botao" onmouseenter="removeHover('evento-2')" onmouseleave="addHover('evento-2')">
+                                    <i class="fa-solid fa-fire-flame-curved"></i>
+                                    Tenho Interesse
+                                </button>
+                                <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-2')" onmouseleave="addHover('evento-2')">
+                                    &#xf064;
+                                </button>                
+                            </div>    
+                        </div>
                     </div>
-                </div>    
- 
-
-            </div>
-
-        </main>
+                    
+                    <div class="evento hover" id="evento-3">
+                        <img class="evento__imagem" src="../assets/img/evento.webp"/>
+                        <div class="evento__conteudo">
+                            <h3 class="evento__subtitulo">SÁB. 17 DE SET ÁS 9:00</h3>
+                            <h2 class="evento__titulo">Evento 4</h2>
+                            <p class="evento__local">Online</p>
+                            <p class="evento__pessoas">30 interessados · 2 comparecerão</p>                        
+                            <div class="evento__botoes">
+                                <button class="evento__botao" onmouseenter="removeHover('evento-3')" onmouseleave="addHover('evento-3')">
+                                    <i class="fa-solid fa-fire-flame-curved"></i>
+                                    Tenho Interesse
+                                </button>
+                                <button class="evento__botao evento__botao--menor" onmouseenter="removeHover('evento-3')" onmouseleave="addHover('evento-3')">
+                                    &#xf064;
+                                </button>                
+                            </div>    
+                        </div>
+                    </div>    
+     
+    
+                </div>
+    
+            </main>
+        </div>
     </div>
+
     <footer></footer>
 </body>
 <script>

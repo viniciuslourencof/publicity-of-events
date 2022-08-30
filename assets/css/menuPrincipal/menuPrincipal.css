@@ -1,7 +1,13 @@
 .menuPrincipal {
     background-color: #242526;
+    bottom: 0px; 
     border-bottom: #3e4042 solid 1px;
     display: flex;
+    height: 51px;
+    left: 0px; 
     margin-top: 0;
-    justify-content: space-around;
+    justify-content: center;
+    position:fixed; 
+    right: 0px;
+    top: 0px; 
 }

@@ -2,8 +2,12 @@
     background-color: #242526;
     border: #3e4042 solid 1px;
     border-radius: 10px;
-    height: 500px;
     margin-top: 1rem;
+    margin-left: 1rem;
     float: left;
-    width: 24%;
+    width: 23%;
+}
+
+.lateral h2, h3 {
+    margin: 1rem;
 }
